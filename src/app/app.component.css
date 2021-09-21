@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Segoes Script";
+    src: url("../assets/fonts/segoescb.ttf");
+    src: url("../assets/fonts/segoescb.ttf") format("woff"),
+    url("../assets/fonts/segoescb.ttf") format("opentype")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+#hero_nav {
+    margin-top: 35vh;
+    margin-left: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    height: 70px;
+}
+
+#hero_nav div {
+    font-family: "Segoes Script";
+    width: 250px;
+    height: 70px;
+    background-color: #B58367;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#hero_nav div.active {
+    font-family: "Segoes Script";
+    width: 250px;
+    height: 70px;
+    background-color: #B67751;
+}
+
+#hero_nav div:hover {
+    cursor: pointer;
+}
+
+#main-content {
+    background-color: #280F0B;
+    padding: 45px 45px 45px 45px;
+    width: auto;
+    border: #B58367 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-content {
+    padding: 20px;
+    width: 80%;
+    border: #FFFFFF solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-column h2{
+    font-family: "Segoes Script";
+    text-align: center;
+    color: white;
+}
+
+.table-column-content {
+    font-family: 'Balsamiq Sans', cursive;
+    width: 100%;
+    height: 30px;
+    color: white;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}

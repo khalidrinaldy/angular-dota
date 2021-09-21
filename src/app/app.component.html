@@ -1,0 +1,29 @@
+<div id="hero_nav">
+  <div *ngFor="let attr of attrs" (click)="changeAttr(attr)" [class.active]="attr == activeAttr">
+    {{ attr }}
+  </div>
+</div>
+<div id="main-content">
+  <div class="table-content">
+    <div class="table-column">
+      <h2>HERO</h2>
+      <ng-container *ngFor="let hero of heroes">
+        <div class="table-column-content" *ngIf="hero.primary_attr==activeAttr">{{hero.localized_name}}</div>
+      </ng-container>
+    </div>
+    <div class="table-column">
+      <h2>ATTRIBUTE</h2>
+      <ng-container *ngFor="let hero of heroes">
+        <div class="table-column-content" *ngIf="hero.primary_attr==activeAttr">{{hero.primary_attr}}</div>
+      </ng-container>
+    </div>
+    <div class="table-column">
+      <h2>ICON</h2>
+      <ng-container *ngFor="let hero of heroes">
+        <div class="table-column-content" *ngIf="hero.primary_attr==activeAttr">
+          <img src="{{toImage(hero)}}" alt="{{hero.localized_name}}">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
